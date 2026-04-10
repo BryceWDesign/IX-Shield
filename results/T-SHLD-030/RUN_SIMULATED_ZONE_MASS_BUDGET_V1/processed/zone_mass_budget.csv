@@ -1,0 +1,6 @@
+zone_id,zone_name,allocated_mass_kg,mass_fraction,role,notes
+Z1,Crew Core,1800.00,0.241611,Most occupied central habitat region,Represents crew-adjacent mass concentration near the central occupied volume.
+Z2,Storm Shelter Envelope,950.00,0.127517,Localized refuge enhancement region,Represents concentrated additional mass surrounding the smaller refuge volume.
+Z3,Logistics Ring,2200.00,0.295302,Surrounding consumables and supplies region,Represents multifunctional mission mass that can contribute to crew protection.
+Z4,Equipment Bay,1400.00,0.187919,Systems and equipment-adjacent region,Represents non-crew systems mass that may influence local shielding geometry.
+Z5,Peripheral Hull Region,1100.00,0.147651,Outer shell and peripheral structure region,Represents structure and distributed outer vehicle mass.
