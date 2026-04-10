@@ -1,0 +1,197 @@
+# IX-Shield PoC Build Walkthrough
+
+## Purpose
+This document explains how the IX-Shield proof-of-concept repository is assembled at a practical level.
+
+The purpose is to make the repository understandable as a buildable package of documentation, configurations, scripts, and processed outputs.
+
+This is not a manufacturing walkthrough.
+This is a repository-construction walkthrough.
+
+## Build Philosophy
+IX-Shield is built as a documentation-first engineering package.
+
+That means the repository is assembled in this order of logic:
+
+1. define the problem boundaries;
+2. define the architecture and threat model;
+3. define the machine-readable configurations;
+4. define the analysis scripts;
+5. generate processed outputs;
+6. package the concept with traceability, BOM, and supporting files.
+
+The build is meant to be inspectable in a browser and repeatable with local file execution.
+
+## Build Inputs
+The IX-Shield PoC build depends on four main classes of inputs:
+
+### 1. Repository-Level Inputs
+These define identity and seriousness.
+Examples include:
+- license;
+- project charter;
+- roadmap;
+- architecture documents;
+- requirements;
+- risk and non-claims documents.
+
+### 2. Configuration Inputs
+These define the machine-readable concept assumptions.
+Examples include:
+- baseline stack configuration;
+- storm-shelter add-on configuration;
+- zone reference configuration.
+
+### 3. Analysis Inputs
+These define how the repository converts configurations into screening outputs.
+Examples include:
+- baseline stack analysis script;
+- shelter-check script;
+- zone mass-budget script.
+
+### 4. Packaging Inputs
+These define how the repository is presented for external review.
+Examples include:
+- bill of materials;
+- traceability map;
+- references;
+- citation metadata;
+- contribution and security files.
+
+## Build Sequence
+
+### Step 1 — Establish Repository Boundaries
+Create the legal and conceptual foundation of the repository.
+
+Key outputs:
+- LICENSE
+- charter
+- roadmap
+- architecture framing
+- requirements and non-claims
+
+The goal of this step is to prevent later files from drifting into undefined scope.
+
+### Step 2 — Define Environment And Architecture
+Create the documents that explain:
+- what environment the concept is addressing;
+- why the architecture is designed the way it is;
+- why the concept uses low-Z / hydrogen-rich logic;
+- why a storm shelter is part of the architecture.
+
+Key outputs:
+- threat model
+- science basis
+- geometry and multifunctional architecture
+- cross-section baseline
+- contamination and risk framing
+
+The goal of this step is to make the design logic legible before any numerical screening occurs.
+
+### Step 3 — Create Machine-Readable Concept Definitions
+Create configuration files that describe:
+- the baseline stack;
+- the shelter add-on;
+- the zone reference mass allocation.
+
+These files are the bridge between narrative documents and analysis outputs.
+
+The goal of this step is to move from “described concept” to “defined concept.”
+
+### Step 4 — Create Screening Scripts
+Create the scripts that:
+- compute stack areal density and layer summaries;
+- evaluate shelter add-on screening logic;
+- summarize zone mass allocations.
+
+The scripts are intentionally simple and bounded.
+They exist to support reproducibility of concept-stage outputs.
+
+### Step 5 — Generate Processed Outputs
+Run the scripts against the configurations and store:
+- CSV outputs;
+- JSON summaries;
+- Markdown summaries.
+
+The goal of this step is to preserve reviewable artifacts in the repository so a manual reviewer can inspect the results without running code first.
+
+### Step 6 — Add Review Packaging
+Add the files that help a technically serious reviewer understand and evaluate the repository.
+
+These include:
+- BOM;
+- source traceability map;
+- references;
+- supporting repo files such as contribution guidance and citation metadata.
+
+The goal of this step is to move the repo from “working notes” to “serious PoC package.”
+
+## Processed Output Philosophy
+Processed outputs are stored in the repository because IX-Shield is designed for manual review as well as script-based inspection.
+
+This means a reviewer should be able to:
+- read the output summaries directly;
+- compare inputs to outputs;
+- understand what the scripts are doing at a high level.
+
+Stored outputs do not replace rerunning the scripts.
+They improve reviewability.
+
+## Folder-Level Build Logic
+The expected folder logic is:
+
+- `docs/`  
+  repository narrative, assumptions, risks, and system framing
+
+- `configs/`  
+  machine-readable concept inputs
+
+- `src/analysis/`  
+  screening scripts
+
+- `results/`  
+  processed outputs grouped by test/run package
+
+- `BOM/`  
+  concept-stage bill of materials
+
+- repository root  
+  license and supporting repository files
+
+## What The Build Walkthrough Assumes
+This walkthrough assumes:
+- the repository is being assembled for concept-stage external review;
+- inputs are manually controlled rather than auto-generated by hidden pipelines;
+- processed outputs are intended to remain understandable to a human reviewer;
+- the owner wants the repo to be serious, bounded, and difficult to dismiss as hand-waving.
+
+## What The Build Walkthrough Does Not Assume
+This walkthrough does not assume:
+- mission certification;
+- high-fidelity transport modeling inside the repository;
+- formal experimental qualification;
+- automatic production deployment;
+- unrestricted implementation rights.
+
+## Review Checklist
+A reviewer using this walkthrough should be able to confirm:
+
+- the repo has a bounded purpose;
+- the repo explains its radiation logic;
+- the repo defines machine-readable concept inputs;
+- the repo includes runnable screening logic;
+- the repo stores processed outputs;
+- the repo includes traceability and BOM support.
+
+If any of those are missing, the PoC package is incomplete.
+
+## Summary
+The IX-Shield PoC build is a layered repository build:
+
+- define the concept;
+- define the inputs;
+- run the screening logic;
+- preserve the outputs;
+- package the evidence.
+
+That build order is what makes the repository look intentional instead of improvised.
