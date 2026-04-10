@@ -1,0 +1,62 @@
+{
+  "stack_id": "baseline_zone_a_v1",
+  "stack_name": "IX-Shield Baseline Zone A v1",
+  "analysis_type": "baseline_areal_density_screen",
+  "units": {
+    "thickness": "cm",
+    "density": "g/cm^3",
+    "areal_density": "g/cm^2"
+  },
+  "notes": [
+    "Concept-stage baseline stack for IX-Shield proof-of-concept screening.",
+    "This file is intended for repository screening only.",
+    "This configuration is not a transport-validated flight design."
+  ],
+  "layers": [
+    {
+      "layer_id": "L1",
+      "layer_name": "Outer Functional Boundary",
+      "material": "Aluminum Alloy Exterior Skin",
+      "thickness_cm": 0.30,
+      "density_g_cm3": 2.70,
+      "role": "Exterior-facing functional boundary",
+      "notes": "Included as a practical thin exterior boundary rather than the primary shielding answer."
+    },
+    {
+      "layer_id": "L2",
+      "layer_name": "Stand-Off Protective Region",
+      "material": "Polymer Honeycomb / Protective Intermediate Region",
+      "thickness_cm": 2.50,
+      "density_g_cm3": 0.08,
+      "role": "Spacing and multifunctional separation region",
+      "notes": "Represents an intermediate protective region compatible with future stuffed-panel or MMOD-aware logic."
+    },
+    {
+      "layer_id": "L3",
+      "layer_name": "Primary Hydrogen-Rich Shielding Layer",
+      "material": "High-Density Polyethylene",
+      "thickness_cm": 15.00,
+      "density_g_cm3": 0.95,
+      "role": "Main passive shielding mass",
+      "notes": "Concept-stage low-Z hydrogen-rich shielding layer."
+    },
+    {
+      "layer_id": "L4",
+      "layer_name": "Inner Support / Liner Layer",
+      "material": "Borated Polyethylene Liner",
+      "thickness_cm": 4.00,
+      "density_g_cm3": 1.20,
+      "role": "Interior support and neutron-aware interlayer",
+      "notes": "Used here as a bounded concept-stage liner layer."
+    },
+    {
+      "layer_id": "L5",
+      "layer_name": "Crew-Facing Interior Boundary",
+      "material": "Interior Composite Panel",
+      "thickness_cm": 0.40,
+      "density_g_cm3": 1.60,
+      "role": "Crew-facing interior boundary",
+      "notes": "Represents a cleanable habitable-side boundary rather than a raw shielding block."
+    }
+  ]
+}
