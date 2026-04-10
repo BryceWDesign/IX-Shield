@@ -1,0 +1,47 @@
+{
+  "stack_id": "storm_shelter_addon_10cm_we_v1",
+  "stack_name": "IX-Shield Storm Shelter Add-On 10cm WE v1",
+  "analysis_type": "storm_shelter_screen",
+  "based_on_stack_id": "baseline_zone_a_v1",
+  "units": {
+    "thickness": "cm",
+    "density": "g/cm^3",
+    "areal_density": "g/cm^2",
+    "water_equivalent_depth": "cm"
+  },
+  "notes": [
+    "Concept-stage local refuge enhancement intended to represent approximately 10 cm water-equivalent additional shielding depth.",
+    "This file is a shelter add-on screening configuration, not a full vehicle definition.",
+    "The add-on is meant for concentrated refuge protection logic only."
+  ],
+  "water_equivalent_target_cm": 10.0,
+  "addon_layers": [
+    {
+      "layer_id": "S1",
+      "layer_name": "Reconfigurable Water Module",
+      "material": "Contained Water",
+      "thickness_cm": 7.50,
+      "density_g_cm3": 1.00,
+      "role": "Primary shelter water-equivalent contributor",
+      "notes": "Represents crew-adjacent reconfigurable water mass."
+    },
+    {
+      "layer_id": "S2",
+      "layer_name": "Hydrogel Support Layer",
+      "material": "Hydrogel Matrix",
+      "thickness_cm": 2.00,
+      "density_g_cm3": 1.02,
+      "role": "Stabilized hydrogen-rich shelter mass",
+      "notes": "Represents a shape-maintaining hydrogen-rich add-on layer."
+    },
+    {
+      "layer_id": "S3",
+      "layer_name": "Boron-Aware Inner Liner",
+      "material": "Borated Polyethylene",
+      "thickness_cm": 0.80,
+      "density_g_cm3": 1.20,
+      "role": "Secondary neutron-aware shelter liner",
+      "notes": "Concept-stage bounded liner for local refuge use."
+    }
+  ]
+}
