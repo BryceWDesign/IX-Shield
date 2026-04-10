@@ -1,0 +1,50 @@
+{
+  "zone_set_id": "reference_vehicle_zones_v1",
+  "zone_set_name": "IX-Shield Reference Vehicle Zones v1",
+  "analysis_type": "zone_mass_budget",
+  "units": {
+    "mass": "kg"
+  },
+  "notes": [
+    "Concept-stage zone mass allocation for geometry-aware screening.",
+    "Mass values are screening inputs for local protection reasoning.",
+    "This file is not a final spacecraft mass model."
+  ],
+  "zones": [
+    {
+      "zone_id": "Z1",
+      "zone_name": "Crew Core",
+      "allocated_mass_kg": 1800,
+      "role": "Most occupied central habitat region",
+      "notes": "Represents crew-adjacent mass concentration near the central occupied volume."
+    },
+    {
+      "zone_id": "Z2",
+      "zone_name": "Storm Shelter Envelope",
+      "allocated_mass_kg": 950,
+      "role": "Localized refuge enhancement region",
+      "notes": "Represents concentrated additional mass surrounding the smaller refuge volume."
+    },
+    {
+      "zone_id": "Z3",
+      "zone_name": "Logistics Ring",
+      "allocated_mass_kg": 2200,
+      "role": "Surrounding consumables and supplies region",
+      "notes": "Represents multifunctional mission mass that can contribute to crew protection."
+    },
+    {
+      "zone_id": "Z4",
+      "zone_name": "Equipment Bay",
+      "allocated_mass_kg": 1400,
+      "role": "Systems and equipment-adjacent region",
+      "notes": "Represents non-crew systems mass that may influence local shielding geometry."
+    },
+    {
+      "zone_id": "Z5",
+      "zone_name": "Peripheral Hull Region",
+      "allocated_mass_kg": 1100,
+      "role": "Outer shell and peripheral structure region",
+      "notes": "Represents structure and distributed outer vehicle mass."
+    }
+  ]
+}
