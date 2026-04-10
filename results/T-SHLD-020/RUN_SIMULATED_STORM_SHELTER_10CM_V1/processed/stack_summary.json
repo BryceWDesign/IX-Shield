@@ -1,0 +1,31 @@
+{
+  "run_id": "RUN_SIMULATED_STORM_SHELTER_10CM_V1",
+  "analysis_type": "storm_shelter_screen",
+  "input_files": {
+    "config": "configs/stacks/storm_shelter_addon_10cm_we_v1.json",
+    "script": "src/analysis/storm_shelter_check.py"
+  },
+  "stack": {
+    "stack_id": "storm_shelter_addon_10cm_we_v1",
+    "stack_name": "IX-Shield Storm Shelter Add-On 10cm WE v1",
+    "based_on_stack_id": "baseline_zone_a_v1",
+    "addon_layer_count": 3
+  },
+  "key_outputs": {
+    "total_addon_areal_density_g_cm2": 10.116,
+    "estimated_water_equivalent_cm": 10.116,
+    "target_water_equivalent_cm": 10.0,
+    "delta_from_target_cm": 0.116
+  },
+  "notes": [
+    "Concept-stage local refuge enhancement intended to represent approximately 10 cm water-equivalent additional shielding depth.",
+    "This file is a shelter add-on screening configuration, not a full vehicle definition.",
+    "The add-on is meant for concentrated refuge protection logic only."
+  ],
+  "limitations": [
+    "screening output only",
+    "water-equivalent estimate is a simple concept-stage proxy",
+    "not transport validated",
+    "not operational authorization"
+  ]
+}
