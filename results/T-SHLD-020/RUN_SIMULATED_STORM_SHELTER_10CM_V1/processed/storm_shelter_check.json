@@ -1,0 +1,40 @@
+{
+  "run_id": "RUN_SIMULATED_STORM_SHELTER_10CM_V1",
+  "analysis_type": "storm_shelter_check",
+  "input_files": {
+    "config": "configs/stacks/storm_shelter_addon_10cm_we_v1.json",
+    "script": "src/analysis/storm_shelter_check.py"
+  },
+  "key_outputs": {
+    "estimated_water_equivalent_cm": 10.116,
+    "target_water_equivalent_cm": 10.0,
+    "target_achievement_ratio": 1.0116,
+    "meets_or_exceeds_target": true
+  },
+  "layer_contributions": [
+    {
+      "layer_id": "S1",
+      "layer_name": "Reconfigurable Water Module",
+      "areal_density_g_cm2": 7.5
+    },
+    {
+      "layer_id": "S2",
+      "layer_name": "Hydrogel Support Layer",
+      "areal_density_g_cm2": 2.04
+    },
+    {
+      "layer_id": "S3",
+      "layer_name": "Boron-Aware Inner Liner",
+      "areal_density_g_cm2": 0.96
+    }
+  ],
+  "notes": [
+    "Target comparison is based on simple concept-stage areal-density-to-water-equivalent proxy logic."
+  ],
+  "limitations": [
+    "screening output only",
+    "not a validated event-protection result",
+    "not transport validated",
+    "not operational authorization"
+  ]
+}
