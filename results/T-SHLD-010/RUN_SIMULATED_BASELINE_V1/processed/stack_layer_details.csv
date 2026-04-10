@@ -1,0 +1,6 @@
+layer_id,layer_name,material,thickness_cm,density_g_cm3,areal_density_g_cm2,role,notes
+L1,Outer Functional Boundary,Aluminum Alloy Exterior Skin,0.30,2.7000,0.8100,Exterior-facing functional boundary,Included as a practical thin exterior boundary rather than the primary shielding answer.
+L2,Stand-Off Protective Region,Polymer Honeycomb / Protective Intermediate Region,2.50,0.0800,0.2000,Spacing and multifunctional separation region,Represents an intermediate protective region compatible with future stuffed-panel or MMOD-aware logic.
+L3,Primary Hydrogen-Rich Shielding Layer,High-Density Polyethylene,15.00,0.9500,14.2500,Main passive shielding mass,Concept-stage low-Z hydrogen-rich shielding layer.
+L4,Inner Support / Liner Layer,Borated Polyethylene Liner,4.00,1.2000,4.8000,Interior support and neutron-aware interlayer,Used here as a bounded concept-stage liner layer.
+L5,Crew-Facing Interior Boundary,Interior Composite Panel,0.40,1.6000,0.6400,Crew-facing interior boundary,Represents a cleanable habitable-side boundary rather than a raw shielding block.
