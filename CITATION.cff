@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+title: "IX-Shield"
+message: "If you use this repository for evaluation, review, or discussion, please cite it using the metadata below."
+type: software
+authors:
+  - family-names: "Lovell"
+    given-names: "Bryce"
+repository-code: "https://github.com/BryceWDesign/IX-Shield"
+abstract: >-
+  IX-Shield is a documentation-first engineering proof of concept for a
+  crew-protection architecture focused on deep-space radiation risk reduction,
+  geometry-aware mass placement, and concentrated storm-shelter logic.
+keywords:
+  - human spaceflight
+  - radiation shielding
+  - storm shelter
+  - habitat architecture
+  - geometry-aware protection
+  - hydrogen-rich materials
+license: "LicenseRef-IX-Shield-Eval-Only-1.0"
+version: "0.1.0"
+date-released: 2026-04-09
