@@ -1,0 +1,30 @@
+{
+  "run_id": "RUN_SIMULATED_BASELINE_V1",
+  "analysis_type": "baseline_areal_density_screen",
+  "input_files": {
+    "config": "configs/stacks/baseline_zone_a_v1.json",
+    "script": "src/analysis/stack_areal_density.py"
+  },
+  "stack": {
+    "stack_id": "baseline_zone_a_v1",
+    "stack_name": "IX-Shield Baseline Zone A v1",
+    "layer_count": 5
+  },
+  "key_outputs": {
+    "total_areal_density_g_cm2": 20.7,
+    "thickest_layer_name": "Primary Hydrogen-Rich Shielding Layer",
+    "thickest_layer_thickness_cm": 15.0,
+    "dominant_areal_density_layer_name": "Primary Hydrogen-Rich Shielding Layer",
+    "dominant_areal_density_layer_g_cm2": 14.25
+  },
+  "notes": [
+    "Concept-stage baseline stack for IX-Shield proof-of-concept screening.",
+    "This file is intended for repository screening only.",
+    "This configuration is not a transport-validated flight design."
+  ],
+  "limitations": [
+    "screening output only",
+    "not transport validated",
+    "not operational authorization"
+  ]
+}
