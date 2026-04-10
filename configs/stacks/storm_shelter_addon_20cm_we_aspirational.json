@@ -1,0 +1,56 @@
+{
+  "stack_id": "storm_shelter_addon_20cm_we_aspirational",
+  "stack_name": "IX-Shield Storm Shelter Add-On 20cm WE Aspirational",
+  "analysis_type": "storm_shelter_screen",
+  "based_on_stack_id": "baseline_zone_a_v1",
+  "units": {
+    "thickness": "cm",
+    "density": "g/cm^3",
+    "areal_density": "g/cm^2",
+    "water_equivalent_depth": "cm"
+  },
+  "notes": [
+    "Aspirational concept-stage refuge enhancement intended to approximate 20 cm water-equivalent additional shielding depth.",
+    "This configuration is included to show an extreme-event shelter growth path.",
+    "This file should not be interpreted as a baseline implementation target."
+  ],
+  "water_equivalent_target_cm": 20.0,
+  "addon_layers": [
+    {
+      "layer_id": "A1",
+      "layer_name": "Primary Water Refuge Module",
+      "material": "Contained Water",
+      "thickness_cm": 14.50,
+      "density_g_cm3": 1.00,
+      "role": "Primary shelter mass contributor",
+      "notes": "Represents concentrated crew-adjacent water shielding."
+    },
+    {
+      "layer_id": "A2",
+      "layer_name": "Hydrogel Augmentation Layer",
+      "material": "Hydrogel Matrix",
+      "thickness_cm": 3.50,
+      "density_g_cm3": 1.02,
+      "role": "Supplemental hydrogen-rich structured mass",
+      "notes": "Supports shape stability and distributed local mass."
+    },
+    {
+      "layer_id": "A3",
+      "layer_name": "Borated Polyethylene Refuge Liner",
+      "material": "Borated Polyethylene",
+      "thickness_cm": 1.50,
+      "density_g_cm3": 1.20,
+      "role": "Secondary neutron-aware local liner",
+      "notes": "Concept-stage local liner in the refuge add-on."
+    },
+    {
+      "layer_id": "A4",
+      "layer_name": "Interior Composite Facing",
+      "material": "Interior Composite Panel",
+      "thickness_cm": 0.50,
+      "density_g_cm3": 1.60,
+      "role": "Crew-facing boundary for shelter add-on package",
+      "notes": "Represents a bounded interior-facing finish layer."
+    }
+  ]
+}
