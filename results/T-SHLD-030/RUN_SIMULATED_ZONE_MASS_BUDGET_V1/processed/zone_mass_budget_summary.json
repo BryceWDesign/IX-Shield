@@ -1,0 +1,33 @@
+{
+  "run_id": "RUN_SIMULATED_ZONE_MASS_BUDGET_V1",
+  "analysis_type": "zone_mass_budget",
+  "input_files": {
+    "config": "configs/zones/reference_vehicle_zones_v1.json",
+    "script": "src/analysis/zone_mass_budget.py"
+  },
+  "zone_set": {
+    "zone_set_id": "reference_vehicle_zones_v1",
+    "zone_set_name": "IX-Shield Reference Vehicle Zones v1",
+    "zone_count": 5
+  },
+  "key_outputs": {
+    "total_allocated_mass_kg": 7450.0,
+    "largest_zone_name": "Logistics Ring",
+    "largest_zone_mass_kg": 2200.0,
+    "largest_zone_fraction": 0.295302,
+    "smallest_zone_name": "Storm Shelter Envelope",
+    "smallest_zone_mass_kg": 950.0,
+    "smallest_zone_fraction": 0.127517
+  },
+  "notes": [
+    "Concept-stage zone mass allocation for geometry-aware screening.",
+    "Mass values are screening inputs for local protection reasoning.",
+    "This file is not a final spacecraft mass model."
+  ],
+  "limitations": [
+    "screening output only",
+    "mass allocation is a concept-stage proxy for geometry-aware protection reasoning",
+    "not transport validated",
+    "not operational authorization"
+  ]
+}
